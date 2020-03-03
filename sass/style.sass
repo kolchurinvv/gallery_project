@@ -1,0 +1,186 @@
+// Colors
+
+$white: rgb(250,250,250)
+$lightBlue: rgb(6,133,158)
+
+// General tags
+
+body
+	background-color: $white
+	padding: 0 0 0 0
+	margin: 0 0 0 0
+	font-size: 1em
+
+ul, ol
+	padding: 0 0 0 0
+	margin: 0 0 0 0
+	border: none
+
+a, a:active, a:hover
+	text-decoration: none
+
+img
+	max-height: 100%
+	max-width: 100%
+	display: block
+
+header
+	position: relative
+	margin: 0 0 0 0 
+	padding: 0 0 0 0
+	border-top: 3px solid grey
+	border-left: 3px solid grey
+	border-radius: 53px 0 0 0
+	box-shadow: -8px -8px 25px #000
+	
+.will-be-under-construction
+	background-color: $lightBlue
+	height: 100vh
+	border-left: 3px solid grey
+	h1
+		position: relative
+		top: 100px
+		left: 150px
+		display: inline-block
+
+// Header
+.logo
+	position: absolute
+	right: 0px
+	top: 0
+	height: 100px
+	width: 31.522%
+	img
+		width: 100%
+		height: 100%
+.header
+	position: relative
+	top: 0px
+	padding-left: 5px
+	height: 100px
+.menu
+	position: absolute
+	margin: -0.176px 0 0 -5.176px
+	height: 50px
+	z-index: 60
+	.img-holder-top
+		position: absolute
+		height: 100px
+		width: 100px
+		border-radius: 100%
+		z-index: 4
+		cursor: pointer
+		transition: box-shadow ease-in-out 250ms
+		img
+			border-radius: 100%
+			box-shadow: 0 0 0 grey
+			width: 100%
+	.img-holder-top-bg
+		position: absolute
+		height: 50px
+		width: 100px
+		z-index: 2
+		img
+			width: 100%
+
+	.top
+		display: none
+		overflow: hidden
+		position: absolute
+		top: 0px
+		height: 100px
+		width: 0px
+		left: 50px
+		a
+			display: inline-block
+			background-color: #bbbcbc
+			color: #363636
+			height: 20px
+			position: absolute
+			bottom: 0px
+			text-align: center
+			padding-top: 4px
+			transition: all 450ms ease-in-out
+			&:hover
+				color: $white
+				background-color: rgb(100,100,100)
+				text-indent: 12px
+		.rows
+			position: relative
+			overflow: hidden
+			left: 50px
+			height: 24px
+			border-top: 1px solid transparent
+		.rows:first-child
+			height: 25px
+			top: 0px
+			left: 0px
+			border-top: initial
+			border-radius: 0 0 0 20px
+			a
+				display: inline-block
+				height: 22px
+				padding-top: 3px
+		.rows:nth-child(2)
+			left: 25px
+		.rows:last-child
+			border-radius: 0 0 30px 0
+	.left
+		display: none
+		background-color: #bbbcbc
+		position: absolute
+		top: 50px
+		width: 100px
+		height: 0px
+		border-radius: 0 0 55px 55px
+		z-index: 3
+	ul
+		position: relative
+		top: 1px
+		li
+			list-style-type: none
+			height: 26px
+			padding-top: 7px
+			text-indent: 5px
+			border-left: 15px solid grey
+			margin-bottom: 1px
+			cursor: pointer
+			background-color: rgb(100,100,100)
+			color: $white
+			transition: all 450ms ease-in-out
+			&:hover
+				background-color: #bbbcbc
+				color: #363636
+				text-indent: 12px
+.fixed
+	position: fixed
+	top: 0px
+.shadow
+	box-shadow: 0px 0px 7px #000
+
+// Preview
+
+.preview-wrapper
+	position: relative
+	.preview
+		position: absolute
+		width: 100%
+		font-size: 0px
+		display: block
+		.img-holder
+			display: block
+			position: absolute
+			// background-color: rgba(0,0,0,0.6)
+			// z-index: 1
+			.switch
+				position: absolute
+				display: block
+			.i-hold
+				position: absolute
+				display: block
+			// .i-hold:nth-child(1)
+			// 	position: absolute
+			// 	display: block
+			
+			img
+				width: 100%

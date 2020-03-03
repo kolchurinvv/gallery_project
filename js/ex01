@@ -1,0 +1,18 @@
+			for(j;j<$holder.find('img').length;j++){
+				z=$holder.find('img').eq(j)[0];
+				if(j!==0){
+					c=$holder.find('img').eq(j).height();
+				}
+				$holder.find('img').eq(j).before('<div></div><div class="i-hold">');
+				$holder.find('img').eq(j).remove();
+				$holder.find('.i-hold').eq(j).html(z).after('</div>');
+				$holder.find('div').not('.i-hold').eq(j).addClass('switch'+j);
+				$holder.find('.switch'+j).css({'height':y,'width':x,'left':picLeft,'top':'0px'});
+				$holder.find('.i-hold').eq(j).css({'width':$holder.width(),'left':'0px'});
+				if(j!==0){
+					c=(y-c)/2;
+					$holder.find('.i-hold').eq(j).css({'top':c});
+				}
+			}
+			c=0;
+		}
